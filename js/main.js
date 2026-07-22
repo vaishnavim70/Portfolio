@@ -5,9 +5,9 @@ AOS.init();
 let nav = document.querySelector(".navbar")
 window.onscroll = function(){
     if(document.documentElement.scrollTop > 20){
-        nav.classList.add("header-scrooled");
+        nav.classList.add("header-scrolled");
     }else{
-        nav.classList.remove("header-scrooled");
+        nav.classList.remove("header-scrolled");
     }
 }
 

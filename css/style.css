@@ -16,10 +16,8 @@
     --bg-dark-blue: #091020;
     --bg-white: #fff;
     --gray-color: #c6c9d8bf;
-    --gradient-color: linear-gradient(-22deg, var(--primary-color)0, #337DFF 100%);
+    --gradient-color: linear-gradient(-22deg, var(--primary-color) 0, #337DFF 100%);
     --gradient-text: linear-gradient(120deg, #1c99FE 20.69%, #7644FF 50.19%, var(--primary-color) 79.69%);
-    filter: progid:DXImagesTransform.Microsift.gradient(startColorstr='var(--primary-color)', endColorstr='var(--secondary-color)', GradientType=1);
-
     /* text color */
     --primary-font: 'Poppins', sans-serif;
     --primary-text: #FD4766;
@@ -225,7 +223,7 @@ button{
     width: 100%;
 }
 
-.header_wrapper .nav-item .nav-link.active
+.header_wrapper .nav-item .nav-link.active,
 .header_wrapper .nav-item .nav-link:hover{
     color: var(--text-white);
 }
@@ -240,7 +238,7 @@ button{
     box-shadow: 0 4px 6px 0 rgba(12,0,46,.05);
 }
 
-.header-scrolled .nav-item .nav-link.active
+.header-scrolled .nav-item .nav-link.active,
 .header-scrolled .nav-item .nav-link:hover{
     color: var(--primary-text);
 }
@@ -328,7 +326,6 @@ button{
     background-color: var(--bg-dark-blue);
     cursor: pointer;
     transition: transform 0.65s cubic-bezier(0.05,0.2,0.1,1);
-    box-shadow: 0.65s cubic-bezier(0.05, 0.2, 0.1, 1);
 }
 
 .services_wrapper .card:hover{

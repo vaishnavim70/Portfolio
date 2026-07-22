@@ -18,14 +18,14 @@
     .header-scrolled{
         height: auto;
     }
-    .header-wrapper .menu-navbar-nav{
+    .header_wrapper .menu-navbar-nav{
         text-align: center;
         background-color: var(--bg-dark-blue);
         padding-bottom: 15px;
 
     }
 
-    .header-wrapper .nav-item .nav-link{
+    .header_wrapper .nav-item .nav-link{
         margin-top: 15px;
     }
 
