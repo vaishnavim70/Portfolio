@@ -19,7 +19,7 @@ const Hero = () => {
               Frontend Engineer
             </h2>
             <p className="hero-desc" data-aos="fade-up" data-aos-delay="300">
-              Frontend Engineer with 1.5+ years building enterprise-scale SPAs using
+              Frontend Engineer with 2+ years building enterprise-scale SPAs using
               React.js, TypeScript, and Tailwind CSS. Specialized in multi-tenant admin
               portals, API-driven UI systems, and real-time dashboards.
             </p>
