@@ -49,7 +49,7 @@ const SFHero = () => {
           </div>
           <div className="col-lg-4 text-center d-none d-lg-block" data-aos="fade-left" data-delay="300">
             <div className="hero-image-wrap">
-              <img src="/profile-photo.jpeg" alt="Vaishnavi Mugale" className="hero-image sf-hero-image" />
+              <img src="/profile-photo.png" alt="Vaishnavi Mugale" className="hero-image sf-hero-image" />
               <div className="hero-image-ring sf-ring"></div>
             </div>
           </div>
