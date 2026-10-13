@@ -5,17 +5,19 @@ const Navbar = () => {
         <a className="navbar-brand nav-logo" href="#home">
           <span className="logo-text">V</span>M
         </a>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <i className="fa-solid fa-bars"></i>
-        </button>
+        <div className="d-flex align-items-center gap-3">
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i className="fa-solid fa-bars"></i>
+          </button>
+        </div>
         <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item"><a className="nav-link" href="#home">Home</a></li>

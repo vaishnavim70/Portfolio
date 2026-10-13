@@ -1,20 +1,22 @@
 import { useEffect } from "react";
+import { ProfileProvider, useProfile } from "./context/ProfileContext";
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Experience from "./components/Experience";
-import Projects from "./components/Projects";
-import Skills from "./components/Skills";
-import Education from "./components/Education";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import FrontendApp from "./components/FrontendApp";
+import SalesforceApp from "./components/SalesforceApp";
 
 declare global {
   interface Window {
-    AOS: { init: (opts?: Record<string, unknown>) => void };
+    AOS: {
+      init: (opts?: Record<string, unknown>) => void;
+      refresh: () => void;
+      refreshHard: () => void;
+    };
   }
 }
 
-function App() {
+const AppContent = () => {
+  const { profile } = useProfile();
+
   useEffect(() => {
     if (window.AOS) {
       window.AOS.init({ once: true, duration: 800, offset: 50 });
@@ -38,17 +40,29 @@ function App() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    document.documentElement.setAttribute("data-profile", profile);
+    window.scrollTo({ top: 0 });
+    requestAnimationFrame(() => {
+      if (window.AOS) {
+        window.AOS.refreshHard();
+      }
+    });
+  }, [profile]);
+
   return (
     <>
       <Navbar />
-      <Hero />
-      <Experience />
-      <Projects />
-      <Skills />
-      <Education />
-      <Contact />
-      <Footer />
+      {profile === "frontend" ? <FrontendApp /> : <SalesforceApp />}
     </>
+  );
+};
+
+function App() {
+  return (
+    <ProfileProvider>
+      <AppContent />
+    </ProfileProvider>
   );
 }
 

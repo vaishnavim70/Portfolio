@@ -870,3 +870,276 @@ img { max-width: 100%; }
   .hero-desc { font-size: 14px; }
   .hero-meta { flex-direction: column; gap: 8px; }
 }
+
+/* ===== PROFILE TOGGLE ===== */
+.profile-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: var(--font-body);
+}
+
+.profile-toggle:hover {
+  border-color: var(--border-hover);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.toggle-track {
+  width: 36px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  position: relative;
+  transition: 0.3s;
+}
+
+.toggle-thumb {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 14px;
+  height: 14px;
+  background: var(--primary);
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.profile-toggle.sf-active .toggle-track {
+  background: rgba(0, 180, 216, 0.3);
+}
+
+.profile-toggle.sf-active .toggle-thumb {
+  left: 19px;
+  background: #00b4d8;
+}
+
+.toggle-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-dim);
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+/* ===== SALESFORCE THEME (2nd Shade - Blue) ===== */
+[data-profile="salesforce"] {
+  --primary: #00b4d8;
+  --primary-light: #48cae4;
+  --primary-glow: rgba(0, 180, 216, 0.25);
+  --accent: #0077b6;
+  --accent-glow: rgba(0, 119, 182, 0.2);
+  --border-hover: rgba(0, 180, 216, 0.3);
+}
+
+/* SF Hero */
+.sf-hero { background: var(--surface); }
+
+.sf-badge {
+  background: rgba(0, 180, 216, 0.08);
+  border-color: rgba(0, 180, 216, 0.2);
+  color: #00b4d8;
+}
+
+.sf-gradient {
+  background: linear-gradient(135deg, #00b4d8, #0077b6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.sf-btn {
+  background: #00b4d8;
+}
+
+.sf-btn:hover {
+  background: #48cae4;
+  box-shadow: 0 8px 30px rgba(0, 180, 216, 0.25);
+}
+
+.sf-btn-outline {
+  border-color: rgba(0, 180, 216, 0.3);
+  color: var(--text);
+}
+
+.sf-btn-outline:hover {
+  border-color: #00b4d8;
+  background: rgba(0, 180, 216, 0.08);
+  color: #48cae4;
+}
+
+.sf-icon-btn:hover {
+  border-color: #00b4d8;
+  color: #00b4d8;
+  background: rgba(0, 180, 216, 0.06);
+}
+
+.sf-hero-image {
+  border-color: rgba(0, 180, 216, 0.3);
+}
+
+.sf-ring {
+  border-color: rgba(0, 180, 216, 0.15);
+}
+
+/* SF Experience */
+.sf-experience-section { background: var(--surface-2); }
+
+.sf-dot {
+  border-color: #00b4d8;
+}
+
+.sf-card {
+  border-color: var(--border);
+}
+
+.sf-card:hover {
+  border-color: rgba(0, 180, 216, 0.3);
+}
+
+.sf-company {
+  color: #48cae4;
+}
+
+.sf-type {
+  background: rgba(0, 180, 216, 0.1);
+  color: #00b4d8;
+}
+
+.sf-project-name {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.sf-project-name i {
+  color: #00b4d8;
+  font-size: 12px;
+}
+
+/* SF Skills */
+.sf-skills-section { background: var(--surface-2); }
+
+.sf-skill-card:hover {
+  border-color: rgba(0, 180, 216, 0.3);
+}
+
+.sf-skill-icon {
+  background: rgba(0, 180, 216, 0.1);
+  color: #00b4d8;
+}
+
+.sf-skill-card:hover .sf-skill-tag {
+  border-color: rgba(0, 180, 216, 0.15);
+}
+
+/* SF Projects */
+.sf-projects-section { background: var(--surface); }
+
+.sf-project-card:hover {
+  border-color: rgba(0, 180, 216, 0.3);
+}
+
+.sf-project-icon {
+  background: rgba(0, 180, 216, 0.1);
+  color: #00b4d8;
+}
+
+.sf-tech-tag {
+  background: rgba(0, 180, 216, 0.08);
+  color: #48cae4;
+}
+
+/* SF Education */
+.sf-education-section { background: var(--surface); }
+
+.sf-edu-card:hover {
+  border-color: rgba(0, 180, 216, 0.3);
+}
+
+.sf-edu-icon {
+  background: rgba(0, 180, 216, 0.1);
+  color: #00b4d8;
+}
+
+.sf-school {
+  color: #48cae4;
+}
+
+.sf-cgpa {
+  background: rgba(0, 180, 216, 0.08);
+  border-color: rgba(0, 180, 216, 0.2);
+  color: #00b4d8;
+}
+
+/* SF Contact section */
+[data-profile="salesforce"] .contact-section { background: var(--surface-2); }
+
+[data-profile="salesforce"] .contact-icon {
+  background: rgba(0, 180, 216, 0.1);
+  color: #00b4d8;
+}
+
+[data-profile="salesforce"] .contact-card:hover .contact-icon {
+  background: #00b4d8;
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(0, 180, 216, 0.25);
+}
+
+[data-profile="salesforce"] .contact-card:hover {
+  border-color: rgba(0, 180, 216, 0.3);
+}
+
+/* SF Timeline */
+[data-profile="salesforce"] .timeline::before {
+  background: linear-gradient(to bottom, #00b4d8, rgba(0, 180, 216, 0.1));
+}
+
+/* SF Navbar */
+[data-profile="salesforce"] .nav-scrolled {
+  background: rgba(12, 15, 26, 0.9) !important;
+}
+
+[data-profile="salesforce"] .nav-cta {
+  background: #00b4d8;
+}
+
+[data-profile="salesforce"] .nav-cta:hover {
+  background: #48cae4;
+  box-shadow: 0 4px 20px rgba(0, 180, 216, 0.25);
+}
+
+/* SF Section tags */
+.sf-tag {
+  color: #00b4d8;
+  border-color: rgba(0, 180, 216, 0.2);
+  background: rgba(0, 180, 216, 0.06);
+}
+
+/* SF Footer */
+[data-profile="salesforce"] .footer-links a:hover {
+  border-color: #00b4d8;
+  color: #00b4d8;
+  background: rgba(0, 180, 216, 0.06);
+}
+
+[data-profile="salesforce"] .site-footer {
+  border-top-color: rgba(0, 180, 216, 0.1);
+}
+
+/* SF Scrollbar */
+[data-profile="salesforce"] ::-webkit-scrollbar-thumb {
+  background: #00b4d8;
+}
+
+[data-profile="salesforce"] ::selection {
+  background: #00b4d8;
+}
