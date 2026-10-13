@@ -11,12 +11,12 @@ const sfSkillGroups = [
   },
   {
     title: "Security & Access",
-    icon: "fa-solid fa-shield-halved",
+    icon: "fa-solid fa-shield-alt",
     skills: ["Field-Level Security", "Object-Level Security", "Profiles", "Roles", "Permission Sets", "Security Settings"],
   },
   {
     title: "Salesforce Clouds",
-    icon: "fa-solid fa-cloud-bolt",
+    icon: "fa-solid fa-cloud",
     skills: ["Sales Cloud", "Service Cloud", "CPQ", "Leads", "Opportunities", "Accounts", "Contacts"],
   },
   {

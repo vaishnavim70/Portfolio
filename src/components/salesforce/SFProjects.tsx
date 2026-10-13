@@ -1,25 +1,25 @@
 const sfProjects = [
   {
-    name: "Telecom CRM Transformation",
-    subtitle: "Salesforce Sales Cloud & Service Cloud",
+    name: "Warehouse and Inventory Repository",
+    subtitle: "Salesforce Sales Cloud",
     highlights: [
-      "Led end-to-end testing for large-scale CRM transformation for a telecom company.",
-      "Executed functional, regression, integration, smoke, sanity, GUI, and data migration testing.",
-      "Validated Salesforce-to-external system data consistency across CRM, billing, and order management.",
-      "Collaborated with cross-functional teams to ensure seamless delivery aligned with business goals.",
+      "Tested Salesforce Sales Cloud end to end across functional, regression, smoke, sanity, exploratory, and UI scenarios.",
+      "Converted business requirements into functional and non-functional test cases.",
+      "Validated Salesforce records with SOQL and checked source-to-target data consistency.",
+      "Verified standard objects, reports, dashboards, and role-based object and field security.",
     ],
-    tech: ["Sales Cloud", "Service Cloud", "SOQL", "JIRA", "ServiceNow"],
+    tech: ["Sales Cloud", "SOQL", "Functional Testing", "Security Testing"],
   },
   {
     name: "Telecom Testing Platform",
     subtitle: "Salesforce Applications (Sales & Service Cloud)",
     highlights: [
-      "Conducted end-to-end testing of Salesforce applications including Sales Cloud and Service Cloud.",
+      "Conducted end-to-end testing of Salesforce Sales Cloud and Service Cloud applications.",
       "Translated business requirements into functional and non-functional test cases.",
-      "Performed data validation using SOQL queries and source-to-target comparison.",
-      "Configured Profiles, Roles, and Security Settings including FLS and OLS.",
+      "Executed functional, regression, sanity, and UI testing and validated data using SOQL queries.",
+      "Tested standard Salesforce objects and configured Profiles, Roles, Field-Level Security, and Object-Level Security.",
     ],
-    tech: ["Sales Cloud", "Service Cloud", "SOQL", "REST APIs", "BrowserStack"],
+    tech: ["Sales Cloud", "Service Cloud", "SOQL", "Security Testing"],
   },
   {
     name: "Recruitment Agency CRM",
@@ -30,7 +30,7 @@ const sfProjects = [
       "Gained exposure to Integration and Data Migration processes.",
       "Owned user stories post-development through testing to closure.",
     ],
-    tech: ["Salesforce", "Data Migration", "Integration Testing", "Provar"],
+    tech: ["Salesforce", "Data Migration", "Integration Testing"],
   },
 ];
 

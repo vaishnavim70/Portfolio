@@ -1,42 +1,45 @@
 const sfExperiences = [
   {
-    role: "Salesforce Tester",
-    company: "Lockated",
+    role: "Salesforce QA Engineer",
+    company: "Haven Infoline Pvt Ltd",
     location: "Pune",
-    period: "Jul 2024 – Present",
+    period: "Feb 2026 – Present",
     type: "Full-time",
-    project: "Telecom Industry CRM Transformation Project",
+    project: "Warehouse and Inventory Repository",
     highlights: [
-      "Led testing efforts for a large-scale CRM transformation initiative for a telecom company, focusing on Salesforce Sales Cloud and Service Cloud.",
-      "Conducted diverse testing types including end-to-end, integration, smoke, sanity, functional, non-functional, GUI, bulk data upload validation, SOQL-based data verification, and data migration testing.",
-      "Collaborated with cross-functional teams including Business, Solution Design, Developers, Integration, Data Migration, and QA Testing teams to ensure seamless delivery aligned with business goals.",
-      "Developed and executed detailed test plans and test cases based on business requirements and user stories.",
-      "Ensured high-quality deliverables through meticulous defect tracking and resolution using JIRA and ServiceNow.",
-      "Performed Salesforce-to-external system integration testing, ensuring data consistency between CRM, billing, and order management systems.",
+      "Tested Salesforce applications end to end, including Sales Cloud.",
+      "Analyzed business requirements and created functional and non-functional test cases.",
+      "Executed functional, regression, smoke, sanity, exploratory, and UI testing.",
+      "Tested standard Salesforce objects including Accounts, Contacts, Leads, Opportunities, Reports, and Dashboards.",
+      "Validated data with SOQL queries and checked consistency between source and target systems.",
+      "Participated in Agile ceremonies and created test strategies, test plans, and detailed test cases.",
+      "Validated Profiles, Roles, Object-Level Security, and Field-Level Security against business rules.",
     ],
   },
   {
-    role: "Salesforce QA",
-    company: "Lockated",
+    role: "Salesforce QA Engineer",
+    company: "Haven Infoline Pvt Ltd",
     location: "Pune",
-    period: "Jul 2024",
+    period: "Jan 2025 – Feb 2026",
     type: "Full-time",
     project: "Telecom Industry Testing Platform (Salesforce)",
     highlights: [
       "Involved in end-to-end testing of Salesforce applications, including Sales Cloud and Service Cloud.",
       "Gathered business requirements and translated them into functional and non-functional test cases.",
-      "Executed functional, regression, sanity, and UI testing, ensuring the application met business requirements.",
+      "Executed functional, regression, sanity, and UI testing to ensure the application met business requirements and user expectations.",
       "Worked with Salesforce objects such as Accounts, Contacts, Leads, Opportunities, Reports, and Dashboards.",
       "Performed data validation testing using SOQL queries and compared source-to-target data.",
-      "Configured Profiles, Roles, and Security Settings (Field-Level Security, Object-Level Security).",
+      "Participated in Agile Scrum ceremonies and contributed to improving testing processes.",
+      "Created test strategies, test plans, and detailed test cases based on business requirements.",
+      "Configured Profiles, Roles, and security settings, including Field-Level and Object-Level Security.",
     ],
   },
   {
-    role: "Intern – Salesforce QA",
+    role: "Salesforce QA Engineer",
     company: "Code Icons Technology",
     location: "Pune",
-    period: "Apr 2023 – Jun 2024",
-    type: "Internship",
+    period: "Oct 2023 – Dec 2024",
+    type: "Full-time",
     project: "Recruitment Agency (Salesforce)",
     highlights: [
       "Supported onboarding of clients and capture of required information across various objects and fields within the system.",
@@ -55,7 +58,7 @@ const SFExperience = () => {
           <span className="section-tag sf-tag">Career Path</span>
           <h2 className="section-title">Work Experience</h2>
           <p className="section-desc">
-            Key Achievements: Best Employee of the Month (October 2024) &amp; Best Employee of the Quarter (April–June 2024)
+            Key Achievement: Best Employee of the Month (October 2025)
           </p>
         </div>
         <div className="timeline sf-timeline">
